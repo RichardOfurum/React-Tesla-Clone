@@ -1,0 +1,103 @@
+:root{
+    --primary: #393c41;;
+}
+
+.container{
+    min-height: 60px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+    justify-content:space-between;
+    z-index: 1;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+   
+}
+
+.menu a {
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0 10px;
+    flex-wrap: nowrap;
+    color: var(--primary);
+}
+
+.right-menu a{
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px;
+    color: var(--primary);
+    
+}
+
+.right-menu{
+    display: flex;
+    align-items: center;
+}
+
+.custom-menu > .MuiSvgIcon-root {
+    font-size: xx-large;
+    color: var(--primary);
+    cursor: pointer;
+
+    
+}
+
+.burger-nav{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    
+    background-color: #fff;
+    /* width: 100%; */
+    width: 300px;
+    /* z-index: 10; */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    
+    /* display: none; */
+}
+
+.burger-nav> li{
+    list-style-type: none;
+    padding: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+
+.burger-nav >li > a{
+    font-weight: bold;
+    /* background-color: red; */
+}
+
+.custom-close> .MuiSvgIcon-root{
+    float: right;
+    margin-right: 20px;
+}
+
+.show{
+    display: flex;
+}
+
+.hide{
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+        .menu{
+            display: none;
+        }
+}
+

@@ -1,0 +1,65 @@
+.wrap{
+        width: 100vw;
+        height: 100vh;
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        /* background-image: url('../../images/model-s.jpg'); */
+
+
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center ; 
+        /* margin-bottom: 300px; */
+}
+
+.item-text {
+    padding-top: 12vh;
+    text-align: center;
+}
+
+.button-group{
+    display: flex
+}
+
+.left-button, .right-button{
+    background-color: rgba(23, 26, 32, 0.8);
+    height: 40px;
+    width: 256px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    opacity: 0.85;
+    text-transform: uppercase;
+    font-size: 12px;
+    cursor:pointer;
+    margin: 8px;
+}
+
+.right-button  {
+    background: #fff;
+    opacity: 0.65;
+    color: black;
+}
+
+.down-arrow{
+    margin-top:20px;
+    height: 40px;
+   
+    overflow-x: hidden;
+    animation: animateDown infinite 1.5s;
+}
+
+.buttons{
+    /* // display:flex;
+    // justify-content: center; */
+}
+
+@media only screen and (max-width: 768px) {
+    .button-group {
+      flex-direction: column;
+    }
+  }
